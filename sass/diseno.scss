@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display', serif;
+
+}
+
+$color-principal: black;
+
+/*header*/
+
+.menu{ 
+	position: static;
+	background-color:rgb(49, 49, 49);
+}
+
+
+.menu__link--login{text-decoration: none;
+	font-size: 20px;
+	display: block;
+	color: white;
+}
+
+
+.menu__logo{width: 15%;}
+
+.menu__titulo{text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 60px;
+	letter-spacing: 10px;
+	display: inline;
+	margin-left: 20%;
+	color: white;
+	margin-top: 20px;
+}
+
+.menu__link{
+	font-size: 20px;
+	text-align: center;
+	display: block;
+	color: white;
+	margin-top: 20px;
+}
+
+/*body*/
+
+.main__subtitulo{
+	font-size: 34px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*footer*/
+
+.footer {
+	margin-top: 10%;
+	margin-bottom: 0;
+}
+
+.footer__table{
+	text-align: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-image: linear-gradient(to top,rgb(114, 114, 114) 20%, white 80%);
+	width: 100%;
+
+	img{
+		width: 130px;
+		padding: 5%;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		
+	}
+
+	th{color:black;
+		font-weight: bold;
+		font-size: 26px;
+		text-align: center;
+	}
+		
+	td{font-size: 20px;
+		color: black;
+		text-align: center;
+	}
+
+}
+
+caption{
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: rgb(0, 0, 0);
+	text-align: right;
+}
+
+/*Sección Inicio*/
+
+main h1{	
+	text-transform: uppercase;
+	font-size: medium 28px;
+	font-weight: bold;
+	word-spacing: 20px;
+	color:black;	
+	text-align: center;
+	padding: 5px;
+	margin: 20px 0px;
+	background-color: lightgray;
+	border: 2px solid black;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	background-color: burlywood;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-left: 3px;
+	border: 2px solid black; 
+	
+	img{
+		object-fit: cover;
+		width: 70%;
+		height: 80%;
+		transition: width 2s, height 2s, transform 2s;
+		margin-left: 10%;
+	}
+	img:hover{
+		transform: scale(1.5);
+	}
+	video{
+		object-fit: cover;
+		width: 80%;
+		height: 70%;
+		margin-left: 10%;
+	}
+}
+
+.grid__box{
+	margin-top: 10px;
+}
+.grid__box--titulo{
+	grid-column: 1 / 4;
+	text-align: center;
+	background-color: rgb(201, 124, 69);
+	width: 100%;
+	letter-spacing: 3px;
+	font-size: 30px;
+	color: black;
+}
+
+.grid__box--video{
+	object-fit: cover;
+	grid-column: 1 / 4;
+}
+
+form{ 
+	display: grid;
+	justify-content: center;
+	
+	button{
+		font-size: 25px;
+		font-weight: bolder;
+		padding: 5px;
+		margin-top: 10px;
+		margin-left: 0;
+		background-color: burlywood;
+	
+	}
+}
+
+
+.texto1{
+	font-size: 20px;
+	line-height: 1.6;
+	font-style: italic;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 0px;
+	color: rgb(63, 63, 63);
+}
+
+/*Sección Tienda*/
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: burlywood;
+	padding: 1em 0em;
+	margin-left: 3px;
+	border: 2px solid black;
+	align-items: center;
+	
+	h3{
+		text-transform: uppercase;
+
+		font-weight: bold;
+		color:black;	
+		padding-top: 5px;
+		height: 10%;
+		width: 100%;
+		margin-top: 10px;
+		margin-left: 10%;
+		margin-bottom: 0px;
+		text-align: left;
+		display: block;
+		
+	
+	}
+	p{
+		font-size: 18px;
+	}
+	span{
+		font-size: 18px;
+		font-weight: lighter;
+		color: black;
+		letter-spacing: 2px;
+		display: block;
+	}
+}
+
+.flex__caja {
+	display: flex;
+	align-items: center;
+	width: 90%;	
+	margin-top: 20px;
+	margin-bottom: 10%;
+	background-color: gainsboro;
+	text-align: center;
+
+	div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+	img{
+	width:80%;
+
+	padding: 1em 1em;
+	transition: width 1s, height 1s, transform 1s;
+	margin-top: 20px;
+	}
+	
+	img:hover{
+		transform: scale(2);
+	}
+	
+	
+}
+
+#product img{
+	width: 250px;
+	height: 250px;
+	padding: 1em 1em;
+	transition: width 1s, height 1s, transform 1s;
+	margin-top: 20px;
+	
+
+	img:hover{
+		transform: scale(1.5);
+	}
+}
+
+
+
+/*seccion nosotros*/
+
+.nosotros button{
+	font-size: 24px;
+	font-weight:500;
+
+}
+
+.nosotros div {
+	font-size: 20px;
+	text-align: left;
+
+}
+.pf {
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	margin-top: 40px;
+
+}
+
+.texto2{
+	font-size: 20px;}
+
