@@ -306,24 +306,25 @@ form button {
 }
 
 /*seccion nosotros*/
-.nosotros button {
+.texto2 {
+  font-size: 20px;
+}
+
+/*seccion FAQ*/
+.faq button {
   font-size: 24px;
   font-weight: 500;
 }
 
-.nosotros div {
+.faq div {
   font-size: 20px;
   text-align: left;
 }
 
-.pf {
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  margin-top: 40px;
-}
-
-.texto2 {
-  font-size: 20px;
+.maps {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 /*# sourceMappingURL=diseno.css.map */
